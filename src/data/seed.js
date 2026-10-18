@@ -625,7 +625,7 @@ const pages = [
         id: 'home-people',
         kind: 'collection',
         heading: { show: false },
-        props: { collection: 'members', mode: 'cards', columns: 4, imageAspect: '1/1', limit: 4, showBody: false, showTags: false, showLinks: false, selection: 'filter', filterField: 'category', filterValue: 'Graduate Student' },
+        props: { collection: 'members', placeholder: 'avatar', mode: 'cards', columns: 4, imageAspect: '1/1', limit: 4, showBody: false, showTags: false, showLinks: false, selection: 'filter', filterField: 'category', filterValue: 'Graduate Student' },
         style: { tone: 'soft', paddingTop: 0 },
         viewAll: { show: true, label: 'Everyone in the lab', target: 'people', mode: 'page' },
       },
@@ -662,7 +662,7 @@ const pages = [
     inNav: true,
     header: { show: true, title: 'Research', subtitle: 'Sensing, machine learning and cyber-physical systems applied to healthcare, commerce, mobility and everyday life.' },
     sections: [
-      { id: 'research-projects', kind: 'collection', heading: { show: false }, props: { collection: 'projects', mode: 'cards', columns: 1, imagePosition: 'alternate', imageSize: 'lg', imageAspect: '4/3', verticalAlign: 'center', titleSize: 'lg', hover: 'lift', bodyLines: 0, showBody: true, showLinks: false } },
+      { id: 'research-projects', kind: 'collection', heading: { show: false }, props: { collection: 'projects', placeholder: 'avatar', mode: 'cards', columns: 1, imagePosition: 'alternate', imageSize: 'lg', imageAspect: '4/3', verticalAlign: 'center', titleSize: 'lg', hover: 'lift', bodyLines: 0, showBody: true, showLinks: false } },
       {
         id: 'research-contact',
         kind: 'blocks',
@@ -680,11 +680,11 @@ const pages = [
     inNav: true,
     header: { show: true, title: 'People', subtitle: 'Graduate students, undergraduate students and visiting researchers, guided by Dr. Tahsina Farah Sanam.' },
     sections: [
-      { id: 'people-director', kind: 'collection', heading: { title: 'Lab Director' }, props: { collection: 'members', mode: 'list', imageAspect: '1/1', bodyLines: 0, selection: 'filter', filterField: 'category', filterValue: 'Lab Director' } },
-      { id: 'people-ra', kind: 'collection', heading: { title: 'Research assistants' }, props: { collection: 'members', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 3, selection: 'filter', filterField: 'category', filterValue: 'Research Assistant', emptyText: '' }, style: { tone: 'soft' }, hidden: true, review: 'All research assistants are hidden until confirmed (see People in the dashboard). Show this section once at least one is visible.' },
-      { id: 'people-grad', kind: 'collection', heading: { title: 'Graduate students' }, props: { collection: 'members', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 3, selection: 'filter', filterField: 'category', filterValue: 'Graduate Student' } },
+      { id: 'people-director', kind: 'collection', heading: { title: 'Lab Director' }, props: { collection: 'members', placeholder: 'avatar', mode: 'list', imageAspect: '1/1', bodyLines: 0, selection: 'filter', filterField: 'category', filterValue: 'Lab Director' } },
+      { id: 'people-ra', kind: 'collection', heading: { title: 'Research assistants' }, props: { collection: 'members', placeholder: 'avatar', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 3, selection: 'filter', filterField: 'category', filterValue: 'Research Assistant', emptyText: '' }, style: { tone: 'soft' }, hidden: true, review: 'All research assistants are hidden until confirmed (see People in the dashboard). Show this section once at least one is visible.' },
+      { id: 'people-grad', kind: 'collection', heading: { title: 'Graduate students' }, props: { collection: 'members', placeholder: 'avatar', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 3, selection: 'filter', filterField: 'category', filterValue: 'Graduate Student' } },
       { id: 'people-ug', kind: 'collection', heading: { title: 'Undergraduate students' }, props: { collection: 'members', mode: 'minimal', showBody: false, showImages: false, clickable: false, selection: 'filter', filterField: 'category', filterValue: 'Undergraduate Student' }, style: { tone: 'soft' } },
-      { id: 'people-alumni', kind: 'collection', heading: { title: 'Alumni' }, props: { collection: 'members', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 2, selection: 'filter', filterField: 'category', filterValue: 'Alumni' } },
+      { id: 'people-alumni', kind: 'collection', heading: { title: 'Alumni' }, props: { collection: 'members', placeholder: 'avatar', mode: 'cards', columns: 3, imageAspect: '1/1', bodyLines: 2, selection: 'filter', filterField: 'category', filterValue: 'Alumni' } },
     ],
   },
   {
