@@ -662,7 +662,7 @@ const pages = [
     inNav: true,
     header: { show: true, title: 'Research', subtitle: 'Sensing, machine learning and cyber-physical systems applied to healthcare, commerce, mobility and everyday life.' },
     sections: [
-      { id: 'research-projects', kind: 'collection', heading: { show: false }, props: { collection: 'projects', mode: 'list', imageAspect: '4/3', bodyLines: 0, showBody: true } },
+      { id: 'research-projects', kind: 'collection', heading: { show: false }, props: { collection: 'projects', mode: 'cards', columns: 1, imagePosition: 'alternate', imageSize: 'lg', imageAspect: '4/3', verticalAlign: 'center', titleSize: 'lg', hover: 'lift', bodyLines: 0, showBody: true, showLinks: false } },
       {
         id: 'research-contact',
         kind: 'blocks',
