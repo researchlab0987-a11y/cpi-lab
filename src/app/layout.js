@@ -6,8 +6,8 @@ import './globals.css';
 const { site, person } = seed.config;
 
 export const metadata = {
-  // Absolute base for social preview images (set NEXT_PUBLIC_SITE_URL to the live address).
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  // Absolute base for social preview images (set SITE_URL to the live address).
+  metadataBase: new URL(process.env.SITE_URL || 'http://localhost:3000'),
   title: { default: site.title, template: `%s | ${site.title}` },
   description: site.description,
   authors: [{ name: [person.honorific, person.name].filter(Boolean).join(' ') }],

@@ -35,7 +35,7 @@ Anything that was unclear or outdated on the old site was imported with a **revi
 
 ## Going live
 
-1. Create a Firebase project for the lab (Authentication → Email/Password, Firestore), copy `.env.example` to `.env.local` and fill in the keys and `NEXT_PUBLIC_SITE_URL`.
+1. Create a Firebase project for the lab (Authentication → Email/Password, Firestore), copy `.env.example` to `.env.local` and fill in the keys and `SITE_URL`.
 2. Put the super admin email in `isSuper()` in `firestore.rules`, add the project id to `.firebaserc`, and publish: `firebase deploy --only firestore:rules`.
 3. Sign in, then **Dashboard → Data and backups → Publish** once. Add editors under **Access**.
 4. Optional: Cloudinary keys for image hosting. Deploy to Vercel with the same environment variables, and add the domain to Firebase → Authentication → Authorized domains.
